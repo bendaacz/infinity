@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: Unbounded-500;
+    src: url("/src/fonts/unbounded/Unbounded-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Unbounded-Regular;
+    src: url("/src/fonts/unbounded/Unbounded.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Unbounded-300;
+    src: url("/src/fonts/unbounded/Unbounded-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("/src/fonts/inter/Inter.ttf") format("truetype");
+}
+
+* {
+    background-color: #131313;
+}

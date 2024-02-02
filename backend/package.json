@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+      "server": "nodemon index.js",
+      "client": "npm run start --prefix ../src",
+      "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "proxy": "http://localhost:4000/",
   "keywords": [],

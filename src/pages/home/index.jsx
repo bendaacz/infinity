@@ -26,8 +26,12 @@ function Home() {
   </button>
   </div>
   <div className='flex items-center justify-center'>
-  <div className='bg-[#262626] w-[1380px] h-[430px] flex items-center justify-center'>
-    <p className='text-white bg-[#262626] p-4'>ahoj</p>
+  <div className='bg-[#262626] w-[1380px] h-[430px] flex items-center justify-center place-content-evenly'>
+    <div className="place-content-center grid-cols-4">
+    <p className='text-white bg-[#262626]'>nazdar</p>
+    <p className='text-white bg-[#262626]'>nazdar</p>
+    <p className='text-white bg-[#262626]'>nazdar</p>
+    </div>
   </div>
 </div>
   </MediaQuery>

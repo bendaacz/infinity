@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
+router.get('/', (req, res) => {
+    res.send('400 Bad Request');
+  });
+
 router.get("/log-in", (req, res) => {
     const str = [{
         "name": "log in.",

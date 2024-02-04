@@ -1,7 +1,7 @@
 function SignIn() {
     return (
-        <p>a</p>
-        )
+        <p className="text-base text-white">sign in</p>
+        );
     }
 
-export default SignIn
+export default SignIn;

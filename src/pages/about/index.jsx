@@ -1,7 +1,7 @@
 function About() {
     return (
-        <p>a</p>
-        )
+        <p className="text-base text-white">about</p>
+        );
     }
 
-export default About
+export default About;

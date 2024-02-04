@@ -1,21 +1,11 @@
 import MediaQuery from 'react-responsive';
+import Nav from "../navbar/index";
 
 
 function Layout() {
     return (
 <MediaQuery minWidth={1060}>
-<div className="flex justify-between items-center mt-[40px] whitespace-nowrap">
-  <div className="flex gap-4">
-    <button className="text-base font-light text-sky-400 mr-[36px] ml-[5rem]">contact</button>
-    <button className="text-base font-light text-white mr-[36px]">about</button>
-    <button className="text-base font-light text-white">home</button>
-  </div>
-  <div className="flex gap-[32px] w-37"></div>
-  <div className="flex gap-4">
-    <button className="text-base text-[#bf87ff] font-light flex justify-end float-right mr-[36px]">sign up</button>
-    <button className="text-base text-white font-light flex justify-end mr-[5rem]">log in</button>
-  </div>
-</div>
+<Nav />
 <h1 className="text-white font-header text-xl flex mt-[50px] justify-center h-[228px]">infinity</h1>
 <div className="flex flex-col items-center justify-center">
 <p className="font-header flex text-[#999999] mt-[10px] ">SECURED WITH CONFIDENCE!</p>
@@ -36,7 +26,7 @@ function Layout() {
   </div>
 </div>
   </MediaQuery>
-    )
+    );
 }
 
-export default Layout
+export default Layout;

@@ -1,7 +1,7 @@
 function Contact() {
     return (
-        <p>a</p>
-    )
+        <p className="text-base text-white">contact</p>
+    );
 }
 
-export default Contact
+export default Contact;

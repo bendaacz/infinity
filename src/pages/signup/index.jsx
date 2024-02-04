@@ -1,7 +1,7 @@
 function SignUp() {
     return (
-        <p>a</p>
-        )
+        <p className="text-base text-white">sign up</p>
+        );
     }
 
-export default SignUp
+export default SignUp;

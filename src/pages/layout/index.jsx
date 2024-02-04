@@ -1,9 +1,9 @@
 import MediaQuery from 'react-responsive';
 import Nav from "../navbar/index";
 
-
 function Layout() {
     return (
+      <>
 <MediaQuery minWidth={1060}>
 <Nav />
 <h1 className="text-white font-header text-xl flex mt-[50px] justify-center h-[228px]">infinity</h1>
@@ -18,14 +18,17 @@ function Layout() {
   </div>
   <div className='flex items-center justify-center'>
   <div className='bg-[#262626] w-[1380px] h-[430px] flex items-center justify-center place-content-evenly'>
-    <div className="place-content-center grid-cols-4">
+  <div className="flex justify-between items-center mt-[40px] whitespace-nowrap">
+  <div className="flex gap-4">
     <p className='text-white bg-[#262626]'>nazdar</p>
     <p className='text-white bg-[#262626]'>nazdar</p>
     <p className='text-white bg-[#262626]'>nazdar</p>
     </div>
+    </div>
   </div>
 </div>
   </MediaQuery>
+  </>
     );
 }
 

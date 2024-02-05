@@ -2,6 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import "animate.css";
+
 @font-face {
     font-family: Unbounded-500;
     src: url("/src/fonts/unbounded/Unbounded-Medium.ttf") format("truetype");

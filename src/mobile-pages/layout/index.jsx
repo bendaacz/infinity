@@ -2,7 +2,7 @@ import MobileNav from "../../mobile-pages/navbar/index"
 
 function Layout () {
     return (
-        <MobileNav />
+        <MobileNav pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
     );
 }
 

@@ -1,24 +1,14 @@
-import { slide as Menu } from 'react-burger-menu';
-import "./index.css";
 
-export default MobileNav => {
-  return (
-    <Menu>
-      <a className="text-white" href="/">
-        Home
-      </a>
-      <a className="menu-item" href="/mobile/contact">
-        about
-      </a>
-      <a className="menu-item" href="/mobile/about">
-        Pizzas
-      </a>
-      <a className="menu-item" href="/mobile/sign-up">
-        Desserts
-      </a>
-      <a className="menu-item" href="/mobile/sign-in">
-        Desserts
-      </a>
-    </Menu>
-  );
-};
+export default function MobileNav() {
+    return (
+        <>
+    <div className="">
+      <div className="flex justify-between items-center fixed bottom-[0px] w-full text-white">
+        <a href="#home" className="text-white block py-[30px] pb-[30px] px-[30px] text-center">Home</a>
+        <a href="#news" className="text-white block py-[30px] px-[30px] text-center">News</a>
+        <a href="#contact" className="text-white block py-[30px] px-[30px] text-center">Contact</a>
+      </div>
+    </div>
+        </>
+    );
+}

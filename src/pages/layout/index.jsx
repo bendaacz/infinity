@@ -1,5 +1,7 @@
 import MediaQuery from 'react-responsive';
 import Nav from "../navbar/index";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBoltLightning, faCoffee, faDollarSign, faServer } from '@fortawesome/free-solid-svg-icons'
 
 function Layout() {
     return (
@@ -17,16 +19,25 @@ function Layout() {
   </button>
   </div>
   <div className='flex items-center justify-center'>
-  <div className='bg-[#262626] w-[1380px] h-[430px] flex items-center justify-center place-content-evenly'>
-  <div className="flex justify-between items-center mt-[40px] whitespace-nowrap">
-  <div className="flex gap-4">
-    <p className='text-white bg-[#262626]'>nazdar</p>
-    <p className='text-white bg-[#262626]'>nazdar</p>
-    <p className='text-white bg-[#262626]'>nazdar</p>
+      <div className='bg-[#262626] w-[1380px] h-[430px] flex items-center justify-center place-content-evenly'>
+        <div className="flex justify-between items-center mt-[40px] whitespace-nowrap">
+          <div className="flex gap-[200px] bg-[#262626]">
+            <div className="flex flex-col items-center text-white bg-[#262626]">
+              <FontAwesomeIcon size='10x' className='bg-[#262626]' icon={faBoltLightning} />
+              <p className='bg-[#262626] mt-[50px] text-[25px] font-normal'>{'>'}5ms latency</p>
+            </div>
+            <div className="flex flex-col items-center text-white bg-[#262626]">
+              <FontAwesomeIcon size='10x' className='bg-[#262626]' icon={faDollarSign} />
+              <p className='bg-[#262626] mt-[50px] text-[25px] font-normal'>$100 credit bonus</p>
+            </div>
+            <div className="flex flex-col items-center text-white bg-[#262626]">
+              <FontAwesomeIcon className='bg-[#262626]' size='10x' icon={faServer} />
+              <p className='bg-[#262626] mt-[50px] text-[25px] font-normal'>99.98% uptime</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
-</div>
   </MediaQuery>
   </>
     );

@@ -5,13 +5,13 @@ import MediaQuery from 'react-responsive';
 import Layout from './pages/layout/index';
 import Contact from './pages/contact/index';
 import About from './pages/about/index';
-import SignIn from './pages/signin/index';
+import LogIn from './pages/login/index';
 import SignUp from './pages/signup/index';
 
 import MobileLayout from "./mobile-pages/layout/index";
 import MobileContact from "./mobile-pages/contact/index";
 import MobileAbout from "./mobile-pages/about/index";
-import MobileSignIn from "./mobile-pages/signin/index";
+import MobileLogIn from "./mobile-pages/login/index";
 import MobileSignUp from "./mobile-pages/signup/index";
 
 
@@ -57,7 +57,7 @@ function App() {
           <Route path="/" element={<Layout />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
-          <Route path="sign-in" element={<SignIn />} />
+          <Route path="log-in" element={<LogIn />} />
           <Route path="sign-up" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
@@ -69,7 +69,7 @@ function App() {
           <Route path="/" element={<MobileLayout />} />
           <Route path="/mobile/contact" element={<MobileContact />} />
           <Route path="/mobile/about" element={<MobileAbout />} />
-          <Route path="/mobile/sign-in" element={<MobileSignIn />} />
+          <Route path="/mobile/log-in" element={<MobileLogIn />} />
           <Route path="/mobile/sign-up" element={<MobileSignUp />} />
         </Routes>
       </BrowserRouter>

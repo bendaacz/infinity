@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Unbounded;
+    src: url("/src/fonts/unbounded/Unbounded.ttf") format("truetype");
+}
+
+.loadinganimation {
+    font-family: "Unbounded";
+    font-size: xx-large;
+    text-align: center;
+    border: 3px solid green;
+    margin: 0;
+    height: 500px;
+    color: white;
+}
+
+body, html {
+    background-color: #131313;
+    margin: 0;
+    height: 100%;
+    border: 3px solid red;
+}

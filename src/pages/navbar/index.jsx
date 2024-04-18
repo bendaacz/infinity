@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Navbar() {
   return (
-<div className="flex justify-between items-center mt-[40px] whitespace-nowrap">
+<div className="flex justify-between items-center select-none mt-[40px] whitespace-nowrap">
   <div className="flex gap-4">
   <Link className='text-base font-light text-sky-400 mr-[36px] ml-[5rem]' to="/contact">contact</Link>
   <Link className='text-base font-light text-white mr-[36px]' to="/about">about</Link>

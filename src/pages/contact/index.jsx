@@ -17,10 +17,10 @@ function Contact() {
       return () => clearTimeout(timer);
     }
   }, [loading]);
-    return (
-        <>
+  return (
+    <>
       <MediaQuery minWidth={1360}>
-            <Nav />
+        <Nav />
         {loading ? (
           <Loader type="ball-grid-pulse" />
         ) : (
@@ -42,11 +42,11 @@ function Contact() {
             <p className='font-normal text-white text-[72px] flex justify-center justify-items center hover:underline'>Instagram</p>
             <p className='font-normal text-white text-[72px] flex justify-center justify-items center hover:underline'>Email</p>
             <p className='font-normal text-white text-[72px] flex justify-center justify-items center hover:underline'>WhatsApp</p>
-              </div>
-            )}
-          </MediaQuery>
-        </>
-      );
-    }
+          </div>
+        )}
+      </MediaQuery>
+    </>
+  );
+}
 
 export default Contact;

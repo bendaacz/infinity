@@ -3,13 +3,54 @@
     src: url("/src/fonts/unbounded/Unbounded.ttf") format("truetype");
 }
 
-.loadinganimation {
+@font-face {
+    font-family: Unbounded-500;
+    src: url("/src/fonts/unbounded/Unbounded-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Unbounded-300;
+    src: url("/src/fonts/unbounded/Unbounded-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("/src/fonts/inter/Inter.ttf") format("truetype");
+}
+
+.Unbounded {
     font-family: "Unbounded";
     font-size: xx-large;
     text-align: center;
     border: 3px solid green;
     margin: 0;
-    height: 500px;
+    color: white;
+}
+
+.Unbounded-500 {
+    font-family: "Unbounded-500";
+    font-size: xx-large;
+    text-align: center;
+    border: 3px solid green;
+    margin: 0;
+    color: white;
+}
+
+.Unbounded-300 {
+    font-family: "Unbounded-300";
+    font-size: xx-large;
+    text-align: center;
+    border: 3px solid green;
+    margin: 0;
+    color: white;
+}
+
+.Inter {
+    font-family: "Inter";
+    font-size: xx-large;
+    text-align: center;
+    border: 3px solid green;
+    margin: 0;
     color: white;
 }
 

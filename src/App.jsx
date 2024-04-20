@@ -16,6 +16,7 @@ import MobileAbout from "./mobile-pages/about/index";
 import MobileLogIn from "./mobile-pages/login/index";
 import MobileSignUp from "./mobile-pages/signup/index";
 import MobileGetStarted from "./mobile-pages/getstarted/index"
+import MobileMenu from "./mobile-pages/menu/index"
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <Route path="/mobile/log-in" element={<MobileLogIn />} />
             <Route path="/mobile/sign-up" element={<MobileSignUp />} />
             <Route path="/mobile/get-started" element={<MobileGetStarted />} />
+            <Route path="/mobile/menu" element={<MobileMenu />} />
           </Routes>
         </BrowserRouter>
       </MediaQuery>

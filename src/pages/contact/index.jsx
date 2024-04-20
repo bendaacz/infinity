@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import Nav from "../navbar/index";
+import MediaQuery from 'react-responsive';
+
+import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import useLoading from '../../Loading.jsx';
 import "/src/App.scss";
-import MediaQuery from 'react-responsive';
 
 function Contact() {
   const loading = useLoading();

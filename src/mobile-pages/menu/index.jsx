@@ -15,10 +15,9 @@ export default function Menu() {
                     <p className="font-normal text-white text-[50px] flex justify-center">home</p>
                     <p className="font-light text-[#7cc4ff] text-[40px] flex justify-center">contact</p>
                     <p className="font-light text-white text-[40px] flex justify-center">about</p>
-                    </div>
-                    <p className="font-light text-white text-[45px] flex justify-center">sign up</p>
-                    <p className="font-light text-[#bf87ff] text-[45px] flex justify-center">sign in</p>
-
+                </div>
+                <p className="font-light text-white text-[45px] flex justify-center">sign up</p>
+                <p className="font-light text-[#bf87ff] text-[45px] flex justify-center">sign in</p>
             </div>
         </>
     );

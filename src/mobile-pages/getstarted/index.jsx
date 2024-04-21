@@ -1,9 +1,9 @@
 import MobileNav from "../../mobile-pages/navbar/index"
 
-function MobileGetStarted () {
+function MobileGetStarted() {
     return (
         <div className="h-[700px]">
-        <MobileNav />
+            <MobileNav />
         </div>
     );
 }

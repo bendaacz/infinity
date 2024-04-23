@@ -1,7 +1,9 @@
-function About () {
+import MobileNav from "../navbar"
+
+export default function About() {
     return (
-        <p>MobileAbout</p>
+        <div className="h-[700px]">
+            <MobileNav />
+        </div>
     );
 }
-
-export default About;

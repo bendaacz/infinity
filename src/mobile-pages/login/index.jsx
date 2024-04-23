@@ -1,7 +1,9 @@
-function SignIn () {
+import MobileNav from "../navbar"
+
+export function SignIn() {
     return (
-        <p>MobileSignIn</p>
+        <div className="h-[700px]">
+            <MobileNav />
+        </div>
     );
 }
-
-export default SignIn;

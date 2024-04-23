@@ -1,7 +1,9 @@
-function Contact () {
+import MobileNav from "../navbar"
+
+export default function Contact() {
     return (
-        <p>MobileContact</p>
+        <div className="h-[700px]">
+            <MobileNav />
+        </div>
     );
 }
-
-export default Contact;

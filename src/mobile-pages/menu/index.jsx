@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 
 export default function Menu() {
+
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="">
                 <div className="h-[50vh] flex-row items-center space-y-[1vh]">
                     <div className="flex justify-end mt-[15px] mr-[20px]">
-                        <Link to="/">
-                            <FontAwesomeIcon className='text-white' size='3x' icon={faX} />
-                        </Link>
+                        <FontAwesomeIcon className='text-white' size='3x' icon={faX} onClick={() => navigate(-1)} />
                     </div>
                     <Link to="/">
                         <p className="font-normal text-white hover:text-[#b8b8b8] text-[50px] flex justify-center">home</p>

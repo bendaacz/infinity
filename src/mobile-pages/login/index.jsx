@@ -1,6 +1,6 @@
 import MobileNav from "../navbar"
 
-export function SignIn() {
+export default function SignIn() {
     return (
         <div className="h-[700px]">
             <MobileNav />

@@ -1,7 +1,9 @@
-function SignUp () {
+import MobileNav from "../navbar"
+
+export default function SignUp() {
     return (
-        <p>MobileSignUp</p>
+        <div className="h-[700px]">
+            <MobileNav />
+        </div>
     );
 }
-
-export default SignUp;

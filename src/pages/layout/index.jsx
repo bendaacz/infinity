@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import MediaQuery from 'react-responsive';
 import Nav from "../navbar/index";
@@ -7,6 +7,7 @@ import { faBoltLightning, faDollarSign, faServer } from '@fortawesome/free-solid
 import "../../App.scss";
 import Loader from "react-loaders";
 import useLoading from '../../Loading.jsx';
+import Typewriter from 'typewriter-effect';
 
 function Layout() {
   const loading = useLoading();
@@ -61,6 +62,21 @@ function Layout() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+
+
+            <div className='flex justify-center mt-[100px]'>
+              <div className='text-white font-header text-[50px]'>
+                <Typewriter
+                  options={{
+                    strings: ["Need more?", "Not enough?", "Have concerns?", "Tight on budget?"],
+                    autoStart: true,
+                    pauseFor: 500,
+                    loop: true,
+                  }}
+                />
               </div>
             </div>
           </div>

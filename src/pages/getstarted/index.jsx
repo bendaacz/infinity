@@ -1,4 +1,5 @@
 import Nav from "../navbar/index"
+import Draggable from 'react-draggable';
 
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
@@ -25,8 +26,20 @@ function GetStarted() {
             ) : (
                 <div className={`h-[1500px] ${fadeIn ? 'fade-in' : ''}`}>
                     <p className="font-light text-white text-[24px]">get started</p>
-                </div>
-            )}
+                    <div className="">
+                        <Draggable axis="x">
+                            <div className="flex">
+                                <div className="flex max-w-sm ml-[50px] h-[450px] border">
+                                    <div className="flex h-full flex-col text-center justify-center text-pretty">
+                                        <h5 className="flex text-normal text-white font-normal mb-[20px] ml-[30px] mr-[30px]">Noteworthy technology acquisitions 2021</h5><p className="font-normal text-gray-700 ml-[30px] mr-[30px]">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Draggable>
+                    </div>
+                </div >
+            )
+            }
         </>
     );
 }

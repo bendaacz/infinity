@@ -1,6 +1,5 @@
 import Nav from "../navbar/index"
-
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import useLoading from '../../Loading.jsx';
 import "/src/App.scss";

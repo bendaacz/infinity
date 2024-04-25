@@ -4,10 +4,10 @@ import MediaQuery from 'react-responsive';
 import Nav from "../navbar/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoltLightning, faDollarSign, faServer } from '@fortawesome/free-solid-svg-icons';
-import "../../App.scss";
 import Loader from "react-loaders";
-import useLoading from '../../Loading.jsx';
 import Typewriter from 'typewriter-effect';
+import useLoading from '../../Loading.jsx';
+import "../../App.scss";
 
 function Layout() {
   const loading = useLoading();

@@ -22,7 +22,6 @@
     font-family: "Unbounded";
     font-size: xx-large;
     text-align: center;
-    border: 3px solid green;
     margin: 0;
     color: white;
 }
@@ -31,7 +30,6 @@
     font-family: "Unbounded-500";
     font-size: xx-large;
     text-align: center;
-    border: 3px solid green;
     margin: 0;
     color: white;
 }
@@ -40,7 +38,6 @@
     font-family: "Unbounded-300";
     font-size: xx-large;
     text-align: center;
-    border: 3px solid green;
     margin: 0;
     color: white;
 }
@@ -49,14 +46,13 @@
     font-family: "Inter";
     font-size: xx-large;
     text-align: center;
-    border: 3px solid green;
     margin: 0;
     color: white;
 }
 
-body, html {
+body,
+html {
     background-color: #131313;
     margin: 0;
     height: 100%;
-   /* border: 3px solid red; */
 }

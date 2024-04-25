@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 
-import "./index.css";
-
 import Layout from './pages/layout/index';
 import Contact from './pages/contact/index';
 import About from './pages/about/index';
@@ -18,9 +16,11 @@ import MobileSignUp from "./mobile-pages/signup/index";
 import MobileGetStarted from "./mobile-pages/getstarted/index"
 import MobileMenu from "./mobile-pages/menu/index"
 
+import "./index.css";
+
 function App() {
   return (
-      <>
+    <>
       <MediaQuery minWidth={1060}>
         <BrowserRouter>
           <Routes>

@@ -1,5 +1,4 @@
 import Nav from "../navbar/index"
-import Draggable from 'react-draggable';
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import useLoading from '../../Loading.jsx';
@@ -24,17 +23,28 @@ function GetStarted() {
                 <Loader type="ball-grid-pulse" />
             ) : (
                 <div className={`h-[1500px] ${fadeIn ? 'fade-in' : ''}`}>
-                    <p className="font-light text-white text-[24px]">get started</p>
                     <div className="">
-                        <Draggable axis="x">
-                            <div className="flex">
-                                <div className="flex max-w-sm ml-[50px] h-[450px] border">
-                                    <div className="flex h-full flex-col text-center justify-center text-pretty">
-                                        <h5 className="flex text-normal text-white font-normal mb-[20px] ml-[30px] mr-[30px]">Noteworthy technology acquisitions 2021</h5><p className="font-normal text-gray-700 ml-[30px] mr-[30px]">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                    </div>
+                        <div className="flex justify-evenly mt-[60px]">
+                            <div className="flex max-w-full h-[450px] border ml-[50px]">
+                                <div className="flex h-full flex-col max-w-xl text-center justify-center text-pretty">
+                                    <h5 className="text-normal text-white font-normal mb-[20px] ml-[30px] mr-[30px]">Noteworthy technology acquisitions 2021</h5>
+                                    <p className="font-normal text-gray-700 ml-[30px] mr-[30px]">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                                 </div>
                             </div>
-                        </Draggable>
+                            <div className="flex max-w-full h-[450px] border mr-[20px] ml-[20px]">
+                                <div className="flex h-full flex-col max-w-xl text-center justify-center text-pretty">
+                                    <h5 className="text-normal text-white font-normal mb-[20px] ml-[30px] mr-[30px]">Noteworthy technology acquisitions 2021</h5>
+                                    <p className="font-normal text-gray-700 ml-[30px] mr-[30px]">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                </div>
+                            </div>
+                            <div className="flex h-[450px] border mr-[50px]">
+                                <div className="flex max-w-full flex-col text-center justify-center text-pretty">
+                                    <h5 className="text-normal text-white font-normal mb-[20px] ml-[30px] mr-[30px]">Noteworthy technology acquisitions 2021</h5>
+                                    <p className="font-normal text-gray-700 ml-[30px] mr-[30px]">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div >
             )

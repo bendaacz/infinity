@@ -18,23 +18,44 @@
     src: url("/src/fonts/inter/Inter.ttf") format("truetype");
 }
 
-.font-preloading {
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
+.Unbounded {
+    font-family: "Unbounded";
+    font-size: xx-large;
+    margin: 0;
+    color: white;
 }
 
-.Unbounded,
-.Unbounded-500,
-.Unbounded-300,
-.Inter {
-    margin: 0 auto;
+.Unbounded-500 {
+    font-family: "Unbounded-500";
+    font-size: xx-large;
+    margin: 0;
     color: white;
+}
+
+.Unbounded-300 {
+    font-family: "Unbounded-300";
+    font-size: xx-large;
+    margin: 0;
+    color: white;
+}
+
+.Inter {
+    font-family: "Inter";
+    font-size: xx-large;
+    margin: 0;
+    color: white;
+}
+
+.font-preloading {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 20vh;
 }
 
 body,
 html {
     background-color: #131313;
     margin: 0;
-    height: 100%;
+    height: 80%;
 }

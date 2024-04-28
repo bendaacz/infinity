@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 
@@ -19,6 +20,20 @@ import MobileMenu from "./mobile-pages/menu/index"
 import "./index.css";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(delay);
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <MediaQuery minWidth={1060}>

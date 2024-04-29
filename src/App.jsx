@@ -25,13 +25,18 @@ function App() {
   useEffect(() => {
     const delay = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1200);
 
     return () => clearTimeout(delay);
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className='flex text-center place-content-evenly mt-[20vh]'>
+      <div className='font-normal text-white text-[70px]'>infinity</div>
+      <div className='font-header text-white text-[70px]'>infinity</div>
+      <div className='font-light text-white text-[70px]'>infinity</div>
+      <div className='font-inter text-white text-[70px]'>infinity</div>
+    </div>;
   }
 
   return (

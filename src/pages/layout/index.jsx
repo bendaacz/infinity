@@ -68,15 +68,18 @@ function Layout() {
 
 
             <div className='flex justify-center mt-[100px]'>
-              <div className='text-white font-header text-[50px]'>
-                <Typewriter
-                  options={{
-                    strings: ["Need more?", "Not enough?", "Have concerns?", "Tight on budget?"],
-                    autoStart: true,
-                    pauseFor: 500,
-                    loop: true,
-                  }}
-                />
+              <div className='flex flex-col'>
+                <div className='text-[#ffffffbb] font-header text-[45px]'>
+                  <Typewriter
+                    options={{
+                      strings: ["Need more?", "Not enough?", "Have concerns?", "Tight on budget?"],
+                      autoStart: true,
+                      pauseFor: 500,
+                      loop: true,
+                    }}
+                  />
+                </div>
+                <div className='font-normal mt-[20px] text-white text-[80px]'>CONTACT US!</div>
               </div>
             </div>
           </div>

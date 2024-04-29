@@ -23,7 +23,8 @@ function About() {
                 <Loader type="ball-grid-pulse" />
             ) : (
                 <div className={`h-[1500px] ${fadeIn ? 'fade-in' : ''}`}>
-                    <p className="font-light text-white text-[24px]">about</p>
+                    <p className="font-normal justify-center flex mt-[10vh] text-[#fffffff1] text-[55px]">Doing the hard work</p>
+                    <p className="font-normal justify-center flex bg-gradient-to-r from-[#c38fff] to-[#3ca7ff] bg-clip-text text-transparent text-[55px]">since 2020</p>
                 </div>
             )}
         </>

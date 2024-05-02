@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <div className='flex text-center place-content-evenly mt-[20vh]'>
+    return <div className='flex w-full text-center place-content-evenly flex-col mt-[10vh]'>
       <div className='font-normal text-white text-[70px]'>infinity</div>
       <div className='font-header text-white text-[70px]'>infinity</div>
       <div className='font-light text-white text-[70px]'>infinity</div>

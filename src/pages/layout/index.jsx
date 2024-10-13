@@ -14,7 +14,7 @@ function Layout() {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    if (!loading) {
+    if (loading) {
       const timer = setTimeout(() => {
         setFadeIn(true);
       }, 0);
